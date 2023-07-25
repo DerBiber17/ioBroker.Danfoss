@@ -1,0 +1,43 @@
+{
+    "expert": "yes",
+    "cli": false,
+    "adapterName": "Danfoss",
+    "title": "Danfoss TripleLynx Pro+ ",
+    "description": "This adapter reads the current power of a Danfoss TripleLynx Pro+",
+    "contributors": "",
+    "features": ["adapter"],
+    "adminFeatures": [],
+    "type": "energy",
+    "startMode": "daemon",
+    "connectionType": "local",
+    "dataSource": "poll",
+    "connectionIndicator": "yes",
+    "adapterSettings": [
+        {
+            "key": "isOnline",
+            "inputType": "checkbox",
+            "defaultValue": false
+        },
+        {
+            "key": "currentPower",
+            "inputType": "number",
+            "defaultValue": 0
+        }
+    ],
+    "language": "JavaScript",
+    "nodeVersion": "16",
+    "adminUi": "none",
+    "releaseScript": "yes",
+    "indentation": "Space (4)",
+    "quotes": "double",
+    "es6class": "yes",
+    "tools": ["ESLint", "type checking", "Prettier"],
+    "authorName": "DerBiber17",
+    "authorGithub": "DerBiber17",
+    "authorEmail": "m.wenke@web.de",
+    "gitRemoteProtocol": "HTTPS",
+    "license": "MIT License",
+    "dependabot": "yes",
+    "target": "github",
+    "creatorVersion": "2.3.0"
+}

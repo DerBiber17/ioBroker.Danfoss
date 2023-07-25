@@ -1,0 +1,101 @@
+{
+    "common": {
+        "name": "Danfoss",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Danfoss TripleLynx Pro+ ",
+        "titleLang": {
+            "en": "Danfoss TripleLynx Pro+ ",
+            "de": "Danfoss TripleLynx Pro+ ",
+            "ru": "Danfoss TripleLynx Pro+ ",
+            "pt": "Danfoss TripleLynx Pro+ ",
+            "nl": "Danfoss TripleLynx Pro+ ",
+            "fr": "Danfoss TripleLynx Pro+ ",
+            "it": "Danfoss TripleLynx Pro+ ",
+            "es": "Danfoss TripleLynx Pro+ ",
+            "pl": "Danfoss TripleLynx Pro+ ",
+            "zh-cn": "Danfoss TripleLynx Pro+ "
+        },
+        "desc": {
+            "en": "This adapter reads the current power of a Danfoss TripleLynx Pro+",
+            "de": "This adapter reads the current power of a Danfoss TripleLynx Pro+",
+            "ru": "This adapter reads the current power of a Danfoss TripleLynx Pro+",
+            "pt": "This adapter reads the current power of a Danfoss TripleLynx Pro+",
+            "nl": "This adapter reads the current power of a Danfoss TripleLynx Pro+",
+            "fr": "This adapter reads the current power of a Danfoss TripleLynx Pro+",
+            "it": "This adapter reads the current power of a Danfoss TripleLynx Pro+",
+            "es": "This adapter reads the current power of a Danfoss TripleLynx Pro+",
+            "pl": "This adapter reads the current power of a Danfoss TripleLynx Pro+",
+            "zh-cn": "This adapter reads the current power of a Danfoss TripleLynx Pro+"
+        },
+        "authors": ["DerBiber17 <m.wenke@web.de>"],
+        "keywords": ["ioBroker", "template", "Smart Home", "home automation"],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "Danfoss.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/DerBiber17/ioBroker.Danfoss/main/admin/Danfoss.png",
+        "readme": "https://github.com/DerBiber17/ioBroker.Danfoss/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "energy",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "none"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.0.0"
+            }
+        ]
+    },
+    "native": {
+        "isOnline": false,
+        "currentPower": 0
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
